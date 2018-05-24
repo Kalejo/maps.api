@@ -1,24 +1,5 @@
-# README
+1. Google Maps
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ah, l'API de Google Maps. un projet qui utilise cette API.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Nous  créons un site simple qui a juste une carte de Google, et un formulaire où l'utilisateur peut entrer une latitude, une longitude, et un message. Quand le formulaire est soumis, un marqueur est placé sur la carte dans la localisation rentrée. Clic sur le marqueur il affiche le message qui était entré.
