@@ -1,0 +1,79 @@
+<!--
+<div id="map"></div>
+<script>
+	var map;
+	function initMap() {
+		map = new google.maps.Map(document.getElementById('map'), {
+			center: {lat: -34.397, lng: 150.644},
+			zoom: 8
+		});
+	}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM5FANaNuoiMwRy5t-gfblTEy4ZvVEzNw&callback=initMap"
+async defer></script>
+-->
+<!--
+<div id="map" style="width:100%;height:500px"></div>
+
+<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(51.508742,-0.120850);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 5};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM5FANaNuoiMwRy5t-gfblTEy4ZvVEzNw&callback=initMap"></script>
+-->
+
+<h1>Formulaires</h1>
+<div class="row">
+	<div class="col-lg-12">
+		<%= form_tag("/", method: "get") do %>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="form-group">
+					<%= text_field_tag'latitude', nil, placeholder: 'Entrez la latitude*', class: "form-control" %>
+					<p class="help-block text-danger"></p>
+				</div>
+				<div class="form-group">
+					<%= text_field_tag'longitude', nil, placeholder: 'Entrez la longitude*', class: "form-control" %>
+					<p class="help-block text-danger"></p>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group">
+					<%= text_area_tag 'content',nil, placeholder: 'Votre message*', class: 'form-control' %>
+					<p class="help-block text-danger"></p>
+					<div class="clearfix"></div>
+					<div class="col-lg-12 text-center">
+						<div id="success"></div>
+						<%= submit_tag ("Envoyer"), class: 'btn btn-primary btn-xl text-uppercase' %>
+					</div>
+				</div>
+			</div>
+			<% end %>
+		</div>
+	</div>
+</div>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM5FANaNuoiMwRy5t-gfblTEy4ZvVEzNw&callback=initMap">
+    </script>
+

@@ -1,0 +1,25 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#map {
+height: 50%;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+height: 100%;
+margin: 0;
+padding: 0;
+}
+.form-group{
+
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
+	cursor: default;
+    border-top: 1px solid #777;
+    background: linear-gradient(#5F5F5F 0%, #404040 100%);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .8);
+    
+}
+h1{
+	text-align: center;
+}
