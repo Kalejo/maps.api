@@ -71,7 +71,18 @@ function myMap() {
           position: uluru,
           map: map
         });
-      }
+	    var infowindow = new google.maps.InfoWindow({
+	    content: "<%= @msg %>"
+	 	 });
+	 
+	    marker.addListener("click", function(){
+	    	 infowindow.open(map,marker)
+	    })
+
+		}
+
+
+    
     </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM5FANaNuoiMwRy5t-gfblTEy4ZvVEzNw&callback=initMap">
