@@ -15,7 +15,7 @@
  */
 
 .right {
-	position: absolute; right: 5px; font-size: 20px; color: #ff3f34
+	position: absolute; right: 5px; font-size: 20px; color: #ff3f34;
 	border-top: 1px solid #777;
 }
 .right li {
@@ -27,13 +27,13 @@
 }
 
 #map {
-height: 50%;
+	height: 50%;
 }
-/* Optional: Makes the sample page fill the window. */
+
 html, body {
-height: 100%;
-margin: 0;
-padding: 0;
+	height: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 
